@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
+    <link type="text/css" rel="stylesheet" href="../CSS/normalize.css" />
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="menu">
+            <div class="card" style="font-size: 1.1vw; padding-bottom: 3%;">
+                <a href="Info.html" style="color: white;">
+                    <div class="cardcontainer" style="padding: 10%; padding-bottom: 5%;">
+                        <img src="BestDaily.jfif" alt="Nature" class="responsive" style="border-radius: 1000px; width: 100%;">
+                        <h2>Tên giám đốc</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="padding: 3%;">
+                <a href="Home.html" style="color: white;">
+                    <div class="cardcontainer" style="padding: 5%; background-color: rgb(138, 138, 138); border-radius: 25px; border: 5px solid rgb(105, 105, 105);">
+                        <h2><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Trang chủ</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="padding: 3%;">
+                <a href="Employee.html">
+                    <div class="cardcontainer" style="padding: 5%; background-color: #e14747; border-radius: 25px; border: 5px solid #b33838;">
+                        <i class="fa fa-address-book" aria-hidden="true"></i>&nbsp; Danh sách nhân viên
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <div class="cardcontainer" style="padding-left: 0px; padding: 3%;">
+                    <td><label class="collapse" style="padding: 5%; padding-left: 20px; background-color:#efc958; color: white; border-radius: 25px; border: 5px solid #b8993e;" for="0">
+                                                        <i class="fa fa-tasks" aria-hidden="true"></i>&nbsp; Tiến độ công việc
+                                                    </label>
+                        <input id="0" type="checkbox">
+                        <div class="row" style="padding-left: 0px; border: transparent;">
+                            <a href="Nhap.html">
+                                <div class="card" style="background-color: #c6ec8c; border-radius: 25px; margin: 5%; margin-left: 10%; margin-right: 10%; padding: 3%;padding-left: 20px; border: 5px solid #859e5f;">
+
+                                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>&nbsp; Nhập kho
+                                </div>
+                            </a>
+                            <a href="Xuat.html">
+                                <div class="card" style="background-color: #abe6ce; border-radius: 25px; margin: 5%; margin-left: 10%; margin-right: 10%; padding: 3%;padding-left: 20px; border: 5px solid #6b9283;">
+                                    <i class="fa fa-truck" aria-hidden="true"></i>&nbsp; Xuất kho
+
+                                </div>
+                            </a>
+                            <a href="Kiemke.html">
+                                <div class="card" style="background-color: #c08bbd; border-radius: 25px; margin: 5%; margin-left: 10%; margin-right: 10%; padding: 3%;padding-left: 20px; border: 5px solid #926a91;">
+                                    <i class="fa fa-truck" aria-hidden="true"></i>&nbsp; Kiểm kê hàng hóa
+
+                                </div>
+                            </a>
+
+                        </div>
+                    </td>
+                </div>
+            </div>
+            <div class="card" style="padding: 3%;">
+                <a href="KPI.html">
+                    <div class="cardcontainer" style="padding: 5%; background-color: #4ab19d; border-radius: 25px; border: 5px solid #317466;">
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp; KPI
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="padding: 3%;">
+                <a href="Report.html">
+                    <div class="cardcontainer" style="padding: 5%; background-color: #344e5c; border-radius: 25px; border: 5px solid #283b46;">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp; Thống kê
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--#menu-->
+
+        <div id="content">
+            <div id="tablecontainer">
+                <div id="logo"></div>
+                <div class="card" style="padding-bottom: 4%;">
+                    <div class="cardcontainer" style="background-color: #e1bd47; float: left; width: 80%;">
+                        <h2><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Xem báo cáo ngày</h2>
+                    </div>
+                    <div class="cardcontainer" style="background-color: #EFEFEF; float: left; width: 20%;">
+                        <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; Giám đốc</h2>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="bar">
+                <input type="text" placeholder="Search..">
+            </div>-->
+            <!--#header-->
+            <div class="tablecontainer" style="width: 100%; padding-bottom: 0%;">
+                <div class="card" style="border-radius: 25px; width: 100%;">
+                    <div class="cardcontainer" style="padding: 2%; background-color: #EFEFEF; border-radius: 25px; padding-left: 10%; padding-right: 10%; height: 6.5vw;">
+                        <div class="dropbar" style="float: left; width: 84%;">
+                            <div class="select">
+                                <select name="dropbar" id="dropbar">
+                                  <option value="1">Chọn phòng ban cần xem báo cáo</option>
+                                  <option value="2" selected="selected">Phòng ban 5 : Phòng quản lý Vật tư - Kho</option>
+                                  <option value="3">--Phòng khác--</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10%; padding: 0.2%; float: left; margin-left: 3%; margin-top: 0.4%;">
+                            <a href="Daily_report.html">
+                                <div class="cardcontainer" style="padding: 5%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                    <i class="fa fa-hand-o-left" aria-hidden="true"></i>&nbsp; Chọn
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablecontainer" style="text-align: left;">
+                <div class="bigtable" style="padding-left: 10%; padding-right: 10%;">
+                    <div style="text-align: center; font-size: 2vw; color: #e17a47b6; padding: 5%;">
+                        <H2>BÁO CÁO NGÀY 22/11/2019</H2>
+                    </div>
+                    <div class="tablecontainer" style="text-align: left; border: 5px solid rgb(119, 119, 119); border-radius: 25px; padding: 1%; background-color: white;">
+                        <div>
+                            <span style="float: left;"><h2 style="padding-left: 3vw;">Công tuy dược phẩm Nam Hà</h2></span>
+                            <span style="float: right; color: #e1bd47;">
+                                <h2 style="padding-right: 3vw;">Cộng hòa xã hội chủ nghĩa Việt Nam</h2>
+                                <h2 style="padding-left: 3vw;">Độc lập-Tự do-Hạnh phúc</h2>
+                            </span>
+                        </div>
+                        <table>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <div style="text-align: center; padding: 1%;">
+                                        <h2>BÁO CÁO KẾT QUẢ CÔNG VIỆC PHÒNG BAN</h2>
+                                    </div>
+                                    <div>
+                                        <span><h2>Họ và tên trưởng phòng :</h2></span>Lê Văn Bê
+                                    </div>
+                                    <div>
+                                        <span><h2>Chức vụ :</h2></span>Trưởng phòng
+                                    </div>
+                                    <div>
+                                        <span><h2>Phòng ban :</h2></span>Quản lý kho
+                                    </div>
+                                    <div>
+                                        <span><h2>Thời gian thực hiện :</h2></span>Ngày 22/11/2019 từ 8h00 đến 20h00
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--<tr>
+                                <td>
+                                    <div class="tablecontainer" style="text-align: left; border: 5px solid rgb(119, 119, 119); border-radius: 25px; padding: 1%;">
+                                        <table>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Kết quả hiện tại</th>
+                                                <th>Thời gian đề nghị</th>
+                                                <th>Lý do</th>
+                                                <th>Số lần gia hạn trước đó</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>-->
+                        </table>
+                        <div class="bar" style="padding: 2%;">
+                            <div class="tablecontainer" style="text-align: left; border: 5px solid rgb(119, 119, 119); border-radius: 25px; padding: 1%;">
+                                <table style="text-align: center; font-size: 0.8vw;">
+                                    <tr style="background-color: rgba(204, 204, 204, 0.671);">
+                                        <th>STT</th>
+                                        <th>Mã công việc</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Nội dung công việc</th>
+                                        <th>Tên nhân viên</th>
+                                        <th>Nội dung báo cáo</th>
+                                        <th>Đánh giá</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>000001</td>
+                                        <td>Thuốc A</td>
+                                        <td>Kiểm tra số lượng bên nhập</td>
+                                        <td>Lê Nam</td>
+                                        <td>Đã hoàn thành 1/2 tiến độ công việc</td>
+                                        <td>
+                                            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>000002</td>
+                                        <td>Thuốc B</td>
+                                        <td>Kiểm tra số lượng bên nhập</td>
+                                        <td>Lê Hà</td>
+                                        <td>Đã hoàn thành 1/2 tiến độ công việc</td>
+                                        <td>
+                                            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>000003</td>
+                                        <td>Thuốc C</td>
+                                        <td>Kiểm tra số lượng bên nhập</td>
+                                        <td>Nguyễn Thu</td>
+                                        <td>Đã hoàn thành 1/2 tiến độ công việc</td>
+                                        <td>
+                                            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <table style="text-align: left;">
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span><h2>Ghi chú của trưởng phòng :</h2></span>Em gửi báo cáo tiến độ hôm nay
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span><h2>Ghi chú của giám đốc :</h2></span>
+                                        <div class="bar" style="padding: 0%;">
+                                            <textarea style="height: 15vw;" class="textbox" type="text" placeholder="Viết gì đi.."></textarea>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="bar" style="padding: 2%; padding-left: 40%;">
+                        <div class="card" style="width: 30%; padding: 1%;">
+                            <a href="Daily_report_ready.html">
+                                <div class="cardcontainer" style="padding: 1%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                    <h2><i class="fa fa-check" aria-hidden="true"></i>&nbsp; Xác nhận</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#content-->
+
+        <div id="footer">
+            <div id="footer">
+
+            </div>
+            <!--#footer-->
+        </div>
+        <!--#footer-->
+
+</body>
+
+</html>

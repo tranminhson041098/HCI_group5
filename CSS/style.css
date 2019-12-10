@@ -1,0 +1,635 @@
+/*==Style cơ bản cho website==*/
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8vw;
+    line-height: 1.254em;
+    margin: 0;
+    padding: 0;
+    background-color: #c5c1c0;
+}
+
+a {
+    text-decoration: none;
+    color: #3B8BBA;
+}
+
+a:hover,
+a:visited {
+    color: white;
+}
+
+
+/*==Lên khung cho website==*/
+
+#container {
+    padding-left: 15%;
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+#menu {
+    /*background-image: url('flat-color-palettes-8.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    background-color: #1a2930b7;
+    width: 15%;
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#footer {
+    font-size: 0.7vw;
+    padding-left: 60%;
+}
+
+
+/*==Bảng==*/
+
+.tablecontainer {
+    padding: 3%;
+}
+
+.bigtable {
+    border-radius: 25px;
+    padding: 25px;
+    background: #EFEFEF;
+    border: 5px;
+}
+
+table {
+    text-align: center;
+    font-size: 0.8vw;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+tr {}
+
+th {
+    color: #2b4450;
+    font-size: 1vw;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.row {
+    border-radius: 25px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 0.8vw;
+    border: 1px solid #ccc;
+}
+
+
+/*.row:hover {
+    background-color: #f18c8e;
+    cursor: pointer;
+    transition: 0.3s;
+}*/
+
+.collapse {
+    cursor: pointer;
+    display: block;
+    color: #f18c8e;
+}
+
+.collapse+input {
+    display: none;
+    /* hide the checkboxes */
+}
+
+.collapse+input+div {
+    display: none;
+}
+
+.collapse+input:checked+div {
+    display: block;
+}
+
+#content {
+    border: 1px pink;
+}
+
+.card {
+    border-radius: 25px;
+    text-align: left;
+    /* Add shadows to create the "card" effect */
+    transition: 0.3s;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(7, 7, 7, 0.2);
+    background-color: rgb(143, 143, 143);
+}
+
+
+/* Add some padding inside the card container */
+
+.cardcontainer {
+    padding: 0.5px;
+    padding-left: 20px;
+}
+
+.card+.card {}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*body {
+    font-family: Arial, Helvetica, sans-serif;
+}*/
+
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding in columns */
+
+.rowcard {
+    margin: 0 -3px;
+    padding: 3%;
+    width: 100%;
+    padding-bottom: 2.5%;
+}
+
+.card1 {
+    border-radius: 25px;
+    text-align: center;
+    width: 40%x;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 6%;
+    border: 5px;
+    font-size: 1.1vw;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(7, 7, 7, 0.2);
+}
+
+
+/* Clear floats after the columns */
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.bar {
+    padding: 3%;
+    width: 100%;
+}
+
+.bar input[type=text] {
+    float: left;
+    font-size: 1vw;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.bar input[type=text]:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.dropbar {
+    width: 50%;
+    font-size: 1vw;
+    padding: 1%;
+    background: #fff;
+    border: 5px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dropbar:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.dropbar .select {
+    width: 81%;
+    background: url('arrow.png') no-repeat;
+    background-position: 80% center;
+}
+
+.dropbar .select select {
+    background: transparent;
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    border-radius: 25px;
+    width: 120%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+}
+
+.textbox {
+    width: 100%;
+    font-size: 1vw;
+    padding: 1%;
+    background: #fff;
+    border: 5px solid #ccc;
+    border-radius: 25px;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.textbox:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+fieldset,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    font-size: 100%;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
+
+
+/*button {
+    background-color: #3B8BBA;
+    border: 10px solid red;
+    border-radius: 25px;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}*/
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header,
+.demo,
+.demo p {
+    margin: 4em 0;
+    text-align: center;
+}
+
+
+/* Base styles for the element that has a c-tooltip */
+
+[data-c-tooltip],
+.c-tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* Base styles for the entire c-tooltip */
+
+[data-c-tooltip]:before,
+[data-c-tooltip]:after,
+.c-tooltip:before,
+.c-tooltip:after {
+    position: absolute;
+    visibility: hidden;
+    -ms-filter: “progid: DXImageTransform.Microsoft.Alpha(Opacity=0)”;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    pointer-events: none;
+}
+
+
+/* Show the entire c-tooltip on hover and focus */
+
+[data-c-tooltip]:hover:before,
+[data-c-tooltip]:hover:after,
+[data-c-tooltip]:focus:before,
+[data-c-tooltip]:focus:after,
+.c-tooltip:hover:before,
+.c-tooltip:hover:after,
+.c-tooltip:focus:before,
+.c-tooltip:focus:after {
+    visibility: visible;
+    -ms-filter: “progid: DXImageTransform.Microsoft.Alpha(Opacity=100)”;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+
+/* Base styles for the c-tooltip’s  arrow */
+
+.c-tooltip:before,
+[data-c-tooltip]:before {
+    z-index: 1001;
+    border: 6px solid transparent;
+    background: transparent;
+    content: “”;
+}
+
+
+/* Base styles for the c-tooltip’s  */
+
+.c-tooltip:after,
+[data-c-tooltip]:after {
+    z-index: 1000;
+    padding: 1vw;
+    width: 160px;
+    background-color: #000;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    content: attr(data-c-tooltip);
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 15px;
+}
+
+[data-c-tooltip]:before,
+[data-c-tooltip]:after,
+.c-tooltip:before,
+.c-tooltip:after,
+.c-tooltip-top:before,
+.c-tooltip-top:after {
+    bottom: 100%;
+    left: 50%;
+}
+
+[data-c-tooltip]:before,
+.c-tooltip:before,
+.c-tooltip-top:before {
+    margin-left: -6px;
+    margin-bottom: -12px;
+    border-top-color: #000;
+    border-top-color: rgba(51, 51, 51, 0.9);
+}
+
+
+/* align top/bottom c-tooltips */
+
+[data-c-tooltip]:after,
+.c-tooltip:after,
+.c-tooltip-top:after {
+    margin-left: -5.3vw;
+}
+
+[data-c-tooltip]:hover:before,
+[data-c-tooltip]:hover:after,
+[data-c-tooltip]:focus:before,
+[data-c-tooltip]:focus:after,
+.c-tooltip:hover:before,
+.c-tooltip:hover:after,
+.c-tooltip:focus:before,
+.c-tooltip:focus:after,
+.c-tooltip-top:hover:before,
+.c-tooltip-top:hover:after,
+.c-tooltip-top:focus:before,
+.c-tooltip-top:focus:after {
+    -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+    transform: translateY(-12px);
+}
+
+
+/* Left */
+
+.c-tooltip-left:before,
+.c-tooltip-left:after {
+    right: 100%;
+    bottom: 50%;
+    left: auto;
+}
+
+.c-tooltip-left:before {
+    margin-left: 0;
+    margin-right: -12px;
+    margin-bottom: 0;
+    border-top-color: transparent;
+    border-left-color: #000;
+    border-left-color: rgba(51, 51, 51, 0.9);
+}
+
+.c-tooltip-left:hover:before,
+.c-tooltip-left:hover:after,
+.c-tooltip-left:focus:before,
+.c-tooltip-left:focus:after {
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    transform: translateX(-12px);
+}
+
+
+/* Bottom */
+
+.c-tooltip-bottom:before,
+.c-tooltip-bottom:after {
+    top: 100%;
+    bottom: auto;
+    left: 50%;
+}
+
+.c-tooltip-bottom:before {
+    margin-top: -12px;
+    margin-bottom: 0;
+    border-top-color: transparent;
+    border-bottom-color: #000;
+    border-bottom-color: rgba(51, 51, 51, 0.9);
+}
+
+.c-tooltip-bottom:hover:before,
+.c-tooltip-bottom:hover:after,
+.c-tooltip-bottom:focus:before,
+.c-tooltip-bottom:focus:after {
+    -webkit-transform: translateY(12px);
+    -moz-transform: translateY(12px);
+    transform: translateY(12px);
+}
+
+
+/* Right */
+
+.c-tooltip-right:before,
+.c-tooltip-right:after {
+    bottom: 50%;
+    left: 100%;
+}
+
+.c-tooltip-right:before {
+    margin-bottom: 0;
+    margin-left: -12px;
+    border-top-color: transparent;
+    border-right-color: #000;
+    border-right-color: rgba(51, 51, 51, 0.9);
+}
+
+.c-tooltip-right:hover:before,
+.c-tooltip-right:hover:after,
+.c-tooltip-right:focus:before,
+.c-tooltip-right:focus:after {
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    transform: translateX(12px);
+}
+
+
+/* Move directional arrows down a bit for left/right c-tooltips */
+
+.c-tooltip-left:before,
+.c-tooltip-right:before {
+    top: 3px;
+}
+
+
+/* Vertically center c-tooltip content for left/right c-tooltips */
+
+.c-tooltip-left:after,
+.c-tooltip-right:after {
+    margin-left: 0;
+    margin-bottom: -16px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+}
+
+.dropdown:focus~.dropdown-content {
+    display: block;
+}

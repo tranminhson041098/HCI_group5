@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
+    <link type="text/css" rel="stylesheet" href="../CSS/normalize.css" />
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="menu">
+            <div class="card" style="font-size: 1.1vw; padding-bottom: 3%;">
+                <a href="Info.html" style="color: white;">
+                    <div class="cardcontainer" style="padding: 10%; padding-bottom: 5%;">
+                        <img src="BestDaily.jfif" alt="Nature" class="responsive" style="border-radius: 1000px; width: 100%;">
+                        <h2>Tên giám đốc</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="padding: 3%;">
+                <a href="Home.html" style="color: white;">
+                    <div class="cardcontainer" style="padding: 5%; background-color: rgb(138, 138, 138); border-radius: 25px; border: 5px solid rgb(105, 105, 105);">
+                        <h2><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Trang chủ</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="padding: 3%;">
+                <a href="Home.html">
+                    <div class="cardcontainer" style="padding: 5%; background-color: #e14747; border-radius: 25px; border: 5px solid #b13737;">
+                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>&nbsp; Quay lại
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!--#menu-->
+
+        <div id="content">
+            <div id="tablecontainer">
+                <div id="logo"></div>
+                <div class="card" style="padding-bottom: 4%;">
+                    <div class="cardcontainer" style="background-color: #e14747; float: left; width: 80%;">
+                        <h2><i class="fa fa-flag-checkered" aria-hidden="true"></i>&nbsp; Báo cáo kết thúc thời hạn công việc</h2>
+                    </div>
+                    <div class="cardcontainer" style="background-color: #EFEFEF; float: left; width: 20%;">
+                        <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; Giám đốc</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="tablecontainer" style="width: 100%; padding-bottom: 0%;">
+                <div class="card" style="border-radius: 25px; width: 100%;">
+                    <div class="cardcontainer" style="padding: 2%; background-color: #EFEFEF; border-radius: 25px; padding-left: 10%; padding-right: 10%; height: 6.5vw;">
+                        <div class="dropbar" style="float: left; width: 84%;">
+                            <div class="select">
+                                <select name="dropbar" id="dropbar">
+                                      <option value="1">Chọn phòng ban cần xem báo cáo</option>
+                                      <option value="2" selected="selected">Phòng ban 5 : Phòng quản lý Vật tư - Kho</option>
+                                      <option value="3">--Phòng khác--</option>
+                                        </select>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10%; padding: 0.2%; float: left; margin-left: 3%; margin-top: 0.4%;">
+                            <a href="Daily_report.html">
+                                <div class="cardcontainer" style="padding: 5%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                    <i class="fa fa-hand-o-left" aria-hidden="true"></i>&nbsp; Chọn
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#header-->
+            <div class="tablecontainer" style="text-align: left;">
+                <div class="bigtable" style="padding-left: 10%; padding-right: 10%;">
+                    <div style="text-align: center; font-size: 2vw; color: #e17a47b6; padding: 5%;">
+                        <H2>BÁO CÁO KẾT THÚC CÔNG VIỆC</H2>
+                    </div>
+                    <div class="tablecontainer" style="text-align: left; border: 5px solid rgb(119, 119, 119); border-radius: 25px; padding: 1%; background-color: white;">
+                        <div>
+                            <span style="float: left;"><h2 style="padding-left: 3vw;">Công tuy dược phẩm Nam Hà</h2></span>
+                            <span style="float: right; color: #e1bd47;">
+                                <h2 style="padding-right: 3vw;">Cộng hòa xã hội chủ nghĩa Việt Nam</h2>
+                                <h2 style="padding-left: 3vw;">Độc lập-Tự do-Hạnh phúc</h2>
+                            </span>
+                        </div>
+                        <div class="cardcontainer" style="padding: 2%; background-color: #EFEFEF; border-radius: 25px; margin-left: 10%; margin-right: 10%; margin-top: 10%;">
+                            <div style="text-align: left; width: 100%; font-size: 2vw;">
+                                <i class="fa fa-thumb-tack" aria-hidden="true" style="color: #69d338;"></i>
+                                <a data-c-tooltip="Tốc độ trung bình : 6,67% / giờ">
+                                    <i class="fa fa-calendar" aria-hidden="true" style="margin-left: 14%; color: #e1bd47;"></i>
+                                </a>
+                                <i class="fa fa-flag-checkered" aria-hidden="true" style="float: right; color: #e14747;"></i>
+                            </div>
+                            <a data-c-tooltip="Hoàn thành 20% tiến độ - Còn 47h trên tổng số 50h">
+                                <div class="card" style="width: 100%; border: 0.2vw solid rgb(119, 119, 119); background-color: white;">
+                                    <div class="card" style="width: 20%; border: 0.2vw solid rgb(241, 46, 46); background-color: rgb(241, 46, 46); text-align: center; color: white;">
+                                        20%
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bigtable" style="background-color: white;">
+                            <table style="text-align: left;">
+                                <tr>
+                                    <th style="width: 30%;">ID Công việc</th>
+                                    <th style="width: 5%">:</th>
+                                    <td>20168281</td>
+                                </tr>
+                                <tr>
+                                    <th style="width: 30%;">Tên trưởng phòng</th>
+                                    <th style="width: 5%">:</th>
+                                    <td>Tuấn AC</td>
+                                </tr>
+                                <tr>
+                                    <th>Nhân viên tham gia</th>
+                                    <th>:</th>
+                                    <td>
+                                        <div class="card" style="width: 30%; padding: 0.3%;">
+                                            <label class="collapse" for="NV1" style="color: white;">
+                                                    <div class="cardcontainer" style="padding: 0%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                                        <p><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp; Danh sách nhân viên</p>
+                                                    </div>
+                                            </label>
+                                            <input id="NV1" type="checkbox">
+                                            <div class="tablecontainer">
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+                                                <a data-c-tooltip="Trần Dần">
+                                                    <img src="BestDaily.jfif" alt="Profile" class="responsive" style="border-radius: 1000px; width: 23%;">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Phòng ban</th>
+                                    <th>:</th>
+                                    <td>Phòng quản lý Vật tư - Kho</td>
+                                </tr>
+                                <tr>
+                                    <th>Nội dung công việc</th>
+                                    <th>:</th>
+                                    <td>
+                                        <div style="float: left; padding-top: 1.5%;">Nhập kho 1000 thùng thuốc kháng sinh</div>
+                                        <div class="card" style="width: 20%; padding: 0.5%; float: right;">
+                                            <a href="Job_detail.html">
+                                                <div class="cardcontainer" style="padding: 3%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi tiết
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Thời hạn</th>
+                                    <th>:</th>
+                                    <td>
+                                        Từ ngày xxx đến ngày yyy ( 50 giờ làm việc )
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Phòng ban phối hợp</th>
+                                    <th>:</th>
+                                    <td>
+                                        Phòng sản phẩm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Độ khó công việc</th>
+                                    <th>:</th>
+                                    <td style="font-size: 1.5vw;">
+                                        <a data-c-tooltip="Độ khó : 4 sao - Khó" style="color: gold;">
+                                            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="bar" style="padding: 2%;">
+                                <div class="card" style="width: 100%; padding: 0.3%;">
+                                    <label class="collapse" for="GD1" style="color: white;">
+                                            <div class="cardcontainer" style="padding: 0%; text-align: center; background-color: #ccc; border-radius: 25px; border: 5px solid rgb(148, 148, 148);">
+                                                <p>GIAI ĐOẠN I : Nhận các đơn hàng nhập nguyên liệu ( Thời gian hoàn thành : 1 ngày )</p>
+                                            </div>
+                                    </label>
+                                    <input id="GD1" type="checkbox">
+                                    <div class="tablecontainer">
+                                        <div class="bigtable" style="border: solid #ccc">
+                                            <table>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Nhân viên</th>
+                                                    <th>Nhiệm vụ</th>
+                                                    <th>Kết quả</th>
+                                                    <th>Đánh giá</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tuấn AC</td>
+                                                    <td>Nhận và xác minh đơn hàng</td>
+                                                    <td><a data-c-tooltip="Thời gian hoàn thành : 14 tiếng 32 phút">Hoàn thành đúng hạn</a></td>
+                                                    <td>
+                                                        <a data-c-tooltip="Chất lượng công việc ở mức Tốt">
+                                                            <h2>4<i class="fa fa-star" aria-hidden="true" style="color: gold;"></i></h2>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="bar">
+                                                            <div class="card" style="width: 100%; padding: 1%;">
+                                                                <a href="Final_report_1_detail.html">
+                                                                    <div class="cardcontainer" style="padding: 5%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi tiết
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100%; padding: 0.3%;">
+                                    <label class="collapse" for="GD2" style="color: white;">
+                                            <div class="cardcontainer" style="padding: 0%; text-align: center; background-color: #ccc; border-radius: 25px; border: 5px solid rgb(148, 148, 148);">
+                                                <p>GIAI ĐOẠN II : kiểm tra số lượng</p>
+                                            </div>
+                                    </label>
+                                    <input id="GD2" type="checkbox">
+                                    <div class="tablecontainer">
+                                        <div class="bigtable" style="border: solid #ccc">
+                                            <table>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Nhân viên</th>
+                                                    <th>Nhiệm vụ</th>
+                                                    <th>Kết quả</th>
+                                                    <th>Đánh giá</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tuấn AC</td>
+                                                    <td>Nhận và xác minh đơn hàng</td>
+                                                    <td><a data-c-tooltip="Thời gian hoàn thành : 14 tiếng 32 phút">Hoàn thành đúng hạn</a></td>
+                                                    <td>
+                                                        <a data-c-tooltip="Chất lượng công việc ở mức Tốt">
+                                                            <h2>4<i class="fa fa-star" aria-hidden="true" style="color: gold;"></i></h2>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="bar">
+                                                            <div class="card" style="width: 100%; padding: 1%;">
+                                                                <a href="Phase_1_Detail.html">
+                                                                    <div class="cardcontainer" style="padding: 5%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi tiết
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100%; padding: 0.3%;">
+                                    <label class="collapse" for="GD3" style="color: white;">
+                                            <div class="cardcontainer" style="padding: 0%; text-align: center; background-color: #ccc; border-radius: 25px; border: 5px solid rgb(148, 148, 148);">
+                                                <p>GIAI ĐOẠN III : Thủ tục hoàn trả và xác nhận</p>
+                                            </div>
+                                    </label>
+                                    <input id="GD3" type="checkbox">
+                                    <div class="tablecontainer">
+                                        <div class="bigtable" style="border: solid #ccc">
+                                            <table>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Nhân viên</th>
+                                                    <th>Nhiệm vụ</th>
+                                                    <th>Kết quả</th>
+                                                    <th>Đánh giá</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tuấn AC</td>
+                                                    <td>Nhận và xác minh đơn hàng</td>
+                                                    <td><a data-c-tooltip="Thời gian hoàn thành : 14 tiếng 32 phút">Hoàn thành đúng hạn</a></td>
+                                                    <td>
+                                                        <a data-c-tooltip="Chất lượng công việc ở mức Tốt">
+                                                            <h2>4<i class="fa fa-star" aria-hidden="true" style="color: gold;"></i></h2>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="bar">
+                                                            <div class="card" style="width: 100%; padding: 1%;">
+                                                                <a href="Phase_1_Detail.html">
+                                                                    <div class="cardcontainer" style="padding: 5%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi tiết
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="width: 100%; padding: 0.3%;">
+                                    <label class="collapse" for="GD4" style="color: white;">
+                                            <div class="cardcontainer" style="padding: 0%; text-align: center; background-color: #ccc; border-radius: 25px; border: 5px solid rgb(148, 148, 148);">
+                                                <p>GIAI ĐOẠN IV : Lập báo cáo gửi thủ kho</p>
+                                            </div>
+                                    </label>
+                                    <input id="GD4" type="checkbox">
+                                    <div class="tablecontainer">
+                                        <div class="bigtable" style="border: solid #ccc">
+                                            <table>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Nhân viên</th>
+                                                    <th>Nhiệm vụ</th>
+                                                    <th>Kết quả</th>
+                                                    <th>Đánh giá</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tuấn AC</td>
+                                                    <td>Nhận và xác minh đơn hàng</td>
+                                                    <td><a data-c-tooltip="Thời gian hoàn thành : 14 tiếng 32 phút">Hoàn thành đúng hạn</a></td>
+                                                    <td>
+                                                        <a data-c-tooltip="Chất lượng công việc ở mức Tốt">
+                                                            <h2>4<i class="fa fa-star" aria-hidden="true" style="color: gold;"></i></h2>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="bar">
+                                                            <div class="card" style="width: 100%; padding: 1%;">
+                                                                <a href="Phase_1_Detail.html">
+                                                                    <div class="cardcontainer" style="padding: 5%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi tiết
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table style="text-align: left;">
+                                <tr>
+                                    <th style="width: 30%;">Ghi chú của trưởng phòng</th>
+                                    <th style="width: 5%">:</th>
+                                    <td>Em gửi báo cáo kết thúc công việc đợt này</td>
+                                </tr>
+                                <tr>
+                                    <th>Ý kiến của giám đốc</th>
+                                    <th>:</th>
+                                    <th>
+                                        <div class="bar" style="padding: 0%;">
+                                            <textarea style="height: 8vw;" class="textbox" type="text" placeholder="Viết gì đi.."></textarea>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bar" style="padding: 2%; padding-left: 36%;">
+                        <div class="card" style="width: 30%; padding: 1%;">
+                            <a href="Final_report_ready.html">
+                                <div class="cardcontainer" style="padding: 1%; text-align: center; background-color: #69d338; border-radius: 25px; border: 5px solid #4f9e2a;">
+                                    <h2><i class="fa fa-check" aria-hidden="true"></i>&nbsp; Xác nhận</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#content-->
+        </div>
+    </div>
+</body>
+
+</html>
